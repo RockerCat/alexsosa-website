@@ -260,9 +260,8 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
             className="text-[clamp(2.8rem,6vw,4.5rem)] font-bold leading-[1.04] tracking-tight text-[#e8f0ff] mb-7"
           >
-            Building digital products
+            Building Digital Products.
             <br />
-            through{" "}
             <motion.span
               className="inline text-transparent bg-clip-text"
               style={{
@@ -277,11 +276,8 @@ export function Hero() {
               }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 2.5 }}
             >
-              technology,
-              <br className="hidden sm:block" /> UX &amp; AI
+              & Interactive Experiences.
             </motion.span>
-            <br className="hidden sm:block" />
-            and interactive experiences.
           </motion.h1>
 
           {/* Subheadline */}
