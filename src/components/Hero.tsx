@@ -135,7 +135,7 @@ export function Hero() {
               style={{
                 width: 560,
                 height: "auto",
-                opacity: 0.075,
+                opacity: 0.05,
                 filter: "blur(2.5px) brightness(1.35) saturate(1.25) drop-shadow(0 0 22px rgba(0, 212, 255, 0.32))",
                 mixBlendMode: "screen",
                 display: "block",
