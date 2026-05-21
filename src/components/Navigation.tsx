@@ -41,7 +41,7 @@ export function Navigation() {
         <div className="max-w-7xl mx-auto px-8 h-[68px] flex items-center justify-between">
           {/* Logo — monogram only */}
           <a href="#" className="group flex items-center" aria-label="Alex Sosa">
-            <GeometricMark />
+            <HeaderMonogram />
           </a>
 
           {/* Desktop links */}
@@ -134,71 +134,44 @@ export function Navigation() {
   )
 }
 
-function GeometricMark() {
+function HeaderMonogram() {
   return (
-    <motion.svg
-      width="34"
-      height="40"
-      viewBox="0 0 34 40"
-      fill="none"
+    <motion.div
       aria-hidden
-      style={{
-        filter: "drop-shadow(0 0 8px rgba(0, 212, 255, 0.4))",
-      }}
       whileHover={{ scale: 1.06 }}
       transition={{ duration: 0.2 }}
+      style={{
+        width: 36,
+        height: 36,
+        flexShrink: 0,
+        position: "relative",
+      }}
     >
-      {/* Left face — primary, lighter fill */}
-      <path
-        d="M17 1 L1 35 L6.5 35 L17 11.5 Z"
-        fill="rgba(0,212,255,0.12)"
-        stroke="#00d4ff"
-        strokeWidth="0.85"
+      {/* Subtle cyan glow behind the mark */}
+      <div
+        style={{
+          position: "absolute",
+          inset: -6,
+          background: "radial-gradient(circle, rgba(0,212,255,0.18) 0%, transparent 70%)",
+          filter: "blur(6px)",
+          pointerEvents: "none",
+        }}
       />
-      {/* Right face — recessed, dimmer */}
-      <path
-        d="M17 1 L33 35 L27.5 35 L17 11.5 Z"
-        fill="rgba(0,212,255,0.05)"
-        stroke="rgba(0,212,255,0.45)"
-        strokeWidth="0.85"
+      <img
+        src="/branding/alex-sosa-monogram-header.png"
+        alt="Alex Sosa"
+        width={36}
+        height={36}
+        style={{
+          width: 36,
+          height: 36,
+          objectFit: "contain",
+          display: "block",
+          filter:
+            "brightness(1.5) saturate(1.3) drop-shadow(0 0 7px rgba(0,212,255,0.5))",
+          imageRendering: "auto",
+        }}
       />
-      {/* Crossbar */}
-      <path
-        d="M6.5 24 L27.5 24 L26.5 28 L7.5 28 Z"
-        fill="rgba(0,212,255,0.08)"
-        stroke="rgba(0,212,255,0.75)"
-        strokeWidth="0.65"
-      />
-
-      {/* ─── Premium edge lighting ─── */}
-      {/* Left outer edge — primary light catch (top-left source) */}
-      <path
-        d="M17 1 L1 35"
-        stroke="rgba(255,255,255,0.28)"
-        strokeWidth="0.55"
-        fill="none"
-        strokeLinecap="round"
-      />
-      {/* Right outer edge — secondary, dimmer */}
-      <path
-        d="M17 1 L33 35"
-        stroke="rgba(255,255,255,0.1)"
-        strokeWidth="0.35"
-        fill="none"
-        strokeLinecap="round"
-      />
-      {/* Crossbar top edge — thin highlight */}
-      <line
-        x1="7" y1="24.2" x2="27" y2="24.2"
-        stroke="rgba(255,255,255,0.14)"
-        strokeWidth="0.4"
-        strokeLinecap="round"
-      />
-      {/* Apex — bright catch light */}
-      <circle cx="17" cy="1" r="1.8" fill="#00d4ff" />
-      <circle cx="17" cy="1" r="4.5" fill="#00d4ff" opacity="0.14" />
-      {/* Apex micro-highlight */}
-      <circle cx="16.3" cy="0.6" r="0.7" fill="rgba(255,255,255,0.7)" />
-    </motion.svg>
+    </motion.div>
   )
 }
