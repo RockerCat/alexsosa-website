@@ -135,8 +135,8 @@ export function Hero() {
               style={{
                 width: 560,
                 height: "auto",
-                opacity: 0.18,
-                filter: "blur(1.5px) brightness(1.6) saturate(1.4) drop-shadow(0 0 28px rgba(0, 212, 255, 0.45))",
+                opacity: 0.075,
+                filter: "blur(2.5px) brightness(1.35) saturate(1.25) drop-shadow(0 0 22px rgba(0, 212, 255, 0.32))",
                 mixBlendMode: "screen",
                 display: "block",
               }}
