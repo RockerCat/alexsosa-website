@@ -39,8 +39,8 @@ export function Navigation() {
         transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
       >
         <div className="max-w-7xl mx-auto px-8 h-[68px] flex items-center justify-between">
-          {/* Logo — monogram only */}
-          <a href="#" className="group flex items-center" aria-label="Alex Sosa">
+          {/* Logo — visible on mobile only; hero lockup owns desktop identity */}
+          <a href="#" className="group flex items-center md:hidden" aria-label="Alex Sosa">
             <HeaderMonogram />
           </a>
 

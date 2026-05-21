@@ -152,41 +152,105 @@ export function Hero() {
       >
         <div className="max-w-[680px]">
 
-          {/* Identity — name */}
+          {/* ── Brand lockup: monogram left · name + title right ── */}
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.08 }}
-            className="mb-5"
+            transition={{ duration: 1, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-10 flex flex-col md:flex-row md:items-center gap-4 md:gap-7"
           >
-            <span
-              style={{
-                fontSize: "clamp(1.25rem, 2.2vw, 1.6rem)",
-                letterSpacing: "0.22em",
-                fontWeight: 200,
-                textTransform: "uppercase",
-                color: "rgba(232, 240, 255, 0.78)",
-                lineHeight: 1,
-              }}
-            >
-              Alex Sosa
-            </span>
-          </motion.div>
+            {/* Monogram — hidden on mobile (nav carries the mark there), shown on md+ */}
+            <div className="relative flex-shrink-0 hidden md:block" style={{ width: 84, height: 84 }}>
+              {/* Radial halo */}
+              <div
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  inset: -22,
+                  background:
+                    "radial-gradient(circle, rgba(0,212,255,0.22) 0%, rgba(0,100,255,0.08) 45%, transparent 70%)",
+                  filter: "blur(14px)",
+                  pointerEvents: "none",
+                }}
+              />
+              <img
+                src="/branding/alex-sosa-monogram-header.png"
+                alt="Alex Sosa"
+                width={84}
+                height={84}
+                style={{
+                  width: 84,
+                  height: 84,
+                  objectFit: "contain",
+                  display: "block",
+                  position: "relative",
+                  filter:
+                    "brightness(1.6) saturate(1.35) drop-shadow(0 0 14px rgba(0,212,255,0.58)) drop-shadow(0 0 4px rgba(0,212,255,0.9))",
+                }}
+              />
+            </div>
 
-          {/* Eyebrow */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.18 }}
-            className="mb-8 flex items-center gap-3"
-          >
-            <div
-              className="h-px w-8 shrink-0"
-              style={{ background: "linear-gradient(to right, #00d4ff, rgba(0,212,255,0.3))" }}
-            />
-            <span className="text-[11px] tracking-[0.26em] text-[#00d4ff] uppercase font-medium">
-              Product &amp; Technology Leader
-            </span>
+            {/* Name + title */}
+            <div className="flex flex-col">
+              {/* Name line */}
+              <div className="relative pb-[10px]">
+                <span
+                  style={{
+                    display: "block",
+                    fontSize: "clamp(1.55rem, 3vw, 2.4rem)",
+                    letterSpacing: "0.28em",
+                    fontWeight: 300,
+                    textTransform: "uppercase",
+                    color: "rgba(232, 240, 255, 0.92)",
+                    lineHeight: 1,
+                  }}
+                >
+                  Alex Sosa
+                </span>
+
+                {/* Cyan streak under the name */}
+                <div
+                  aria-hidden="true"
+                  style={{
+                    position: "absolute",
+                    bottom: 3,
+                    left: 0,
+                    width: "88%",
+                    height: 1,
+                    background:
+                      "linear-gradient(to right, rgba(0,212,255,0.85) 0%, rgba(0,212,255,0.35) 55%, transparent 100%)",
+                  }}
+                />
+                {/* Glow bloom below the streak */}
+                <div
+                  aria-hidden="true"
+                  style={{
+                    position: "absolute",
+                    bottom: -2,
+                    left: 0,
+                    width: "65%",
+                    height: 7,
+                    background:
+                      "linear-gradient(to right, rgba(0,212,255,0.18) 0%, transparent 100%)",
+                    filter: "blur(3px)",
+                  }}
+                />
+              </div>
+
+              {/* Subtitle */}
+              <span
+                style={{
+                  fontSize: "0.6875rem",
+                  letterSpacing: "0.28em",
+                  textTransform: "uppercase",
+                  fontWeight: 500,
+                  color: "#00d4ff",
+                  lineHeight: 1,
+                }}
+              >
+                Product &amp; Technology Leader
+              </span>
+            </div>
           </motion.div>
 
           {/* Headline */}
