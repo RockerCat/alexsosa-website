@@ -105,76 +105,42 @@ export function Hero() {
         />
       ))}
 
-      {/* ── DEPTH LAYER 4: large geometric A with parallax ── */}
-      {/* Entrance wrapper */}
+      {/* ── DEPTH LAYER 4: brand monogram with parallax ── */}
       <motion.div
-        className="absolute right-[-100px] md:right-[-30px] lg:right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none"
-        initial={{ opacity: 0, x: 100 }}
+        className="absolute right-[-80px] md:right-[-20px] lg:right-[2%] top-1/2 -translate-y-1/2 pointer-events-none select-none"
+        initial={{ opacity: 0, x: 80 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
       >
-        {/* Scroll parallax */}
         <motion.div style={{ y: geometricY, opacity: geometricOpacity }}>
-          {/* Float animation */}
           <motion.div
             animate={{ y: [0, -18, 0] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           >
-            <svg
-              width="560"
-              height="660"
-              viewBox="0 0 400 470"
-              fill="none"
-              className="opacity-[0.22] md:opacity-[0.32]"
-            >
-              {/* Left face */}
-              <path
-                d="M200 12 L18 435 L86 435 L200 125 Z"
-                fill="rgba(0, 212, 255, 0.04)"
-                stroke="rgba(0, 212, 255, 0.3)"
-                strokeWidth="1.4"
-              />
-              {/* Right face */}
-              <path
-                d="M200 12 L382 435 L314 435 L200 125 Z"
-                fill="rgba(0, 212, 255, 0.02)"
-                stroke="rgba(0, 212, 255, 0.2)"
-                strokeWidth="1.4"
-              />
-              {/* Center spine */}
-              <line
-                x1="200" y1="12" x2="200" y2="435"
-                stroke="rgba(0, 212, 255, 0.055)"
-                strokeWidth="0.6"
-              />
-              {/* Crossbar */}
-              <path
-                d="M86 288 L314 288 L302 322 L98 322 Z"
-                fill="rgba(0, 212, 255, 0.06)"
-                stroke="rgba(0, 212, 255, 0.42)"
-                strokeWidth="1"
-              />
-              {/* Inner facet diagonals */}
-              <line x1="200" y1="12" x2="86" y2="288"
-                stroke="rgba(0, 212, 255, 0.08)" strokeWidth="0.5" />
-              <line x1="200" y1="12" x2="314" y2="288"
-                stroke="rgba(0, 212, 255, 0.08)" strokeWidth="0.5" />
-              {/* Lower inner triangles for depth */}
-              <line x1="86" y1="288" x2="200" y2="435"
-                stroke="rgba(0, 212, 255, 0.04)" strokeWidth="0.4" />
-              <line x1="314" y1="288" x2="200" y2="435"
-                stroke="rgba(0, 212, 255, 0.04)" strokeWidth="0.4" />
-              {/* Apex — primary glow */}
-              <circle cx="200" cy="12" r="4.5" fill="#00d4ff" opacity="0.95" />
-              <circle cx="200" cy="12" r="18" fill="#00d4ff" opacity="0.08" />
-              <circle cx="200" cy="12" r="36" fill="#00d4ff" opacity="0.03" />
-              {/* Bottom corners */}
-              <circle cx="18"  cy="435" r="2.5" fill="#00d4ff" opacity="0.45" />
-              <circle cx="382" cy="435" r="2.5" fill="#00d4ff" opacity="0.45" />
-              {/* Crossbar corners */}
-              <circle cx="86"  cy="288" r="1.5" fill="#00d4ff" opacity="0.35" />
-              <circle cx="314" cy="288" r="1.5" fill="#00d4ff" opacity="0.35" />
-            </svg>
+            {/* Cyan glow halo behind the monogram */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: "radial-gradient(ellipse 60% 70% at 50% 50%, rgba(0, 212, 255, 0.12) 0%, transparent 70%)",
+                filter: "blur(32px)",
+                transform: "scale(1.15)",
+              }}
+            />
+            <img
+              src="/branding/alex-sosa-monogram.png"
+              alt=""
+              aria-hidden="true"
+              width={560}
+              height={660}
+              style={{
+                width: 560,
+                height: "auto",
+                opacity: 0.18,
+                filter: "blur(1.5px) brightness(1.6) saturate(1.4) drop-shadow(0 0 28px rgba(0, 212, 255, 0.45))",
+                mixBlendMode: "screen",
+                display: "block",
+              }}
+            />
           </motion.div>
         </motion.div>
       </motion.div>
