@@ -288,7 +288,7 @@ export function Hero() {
             className="leading-relaxed mb-9 max-w-[540px]"
             style={{ fontSize: "1.0625rem", color: "rgba(107, 127, 163, 0.95)", lineHeight: 1.75 }}
           >
-            20+ years building products across games, platforms and emerging technology.
+            Games, platforms and emerging technology.
           </motion.p>
 
           {/* Tags */}
