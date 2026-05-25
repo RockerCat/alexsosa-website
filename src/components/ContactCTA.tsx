@@ -24,7 +24,7 @@ const contactLinks = [
     label: "LinkedIn",
     href: "https://linkedin.com/in/alexsosa",
     IconComponent: LinkedInIcon,
-    description: "Connect professionally",
+    description: "Professional background & updates",
   },
   {
     label: "Email",
@@ -34,9 +34,9 @@ const contactLinks = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/alexsosa",
+    href: "https://github.com/RockerCat",
     IconComponent: GitHubIcon,
-    description: "See what I'm coding",
+    description: "Code, prototypes & experiments",
   },
 ]
 
@@ -132,8 +132,7 @@ export function ContactCTA() {
             className="mx-auto mb-16 max-w-lg"
             style={{ fontSize: "1.0625rem", color: "rgba(107,127,163,0.85)", lineHeight: 1.75 }}
           >
-            Whether it&apos;s a product challenge, a partnership, or just an interesting
-            conversation — I&apos;m open to connecting with people who build.
+            Always interested in meaningful product conversations, ambitious ideas, and teams building things that actually matter.
           </p>
 
           {/* Contact links */}

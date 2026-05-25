@@ -98,25 +98,25 @@ export const pillars = [
     icon: "Target",
     title: "Product Thinking",
     description:
-      "Turning ambiguity into strategy. Knowing what to build — and what not to — before a single line of code is written.",
+      "Turning ambiguity into direction — figuring out what actually matters before teams waste months building the wrong thing.",
   },
   {
     icon: "Layers",
     title: "UX & Interaction",
     description:
-      "Designing experiences that feel obvious in hindsight. Every layer — from architecture to micro-interaction — deliberate.",
+      "Designing interactions that feel effortless to users — even when the systems behind them are complex.",
   },
   {
     icon: "Code2",
     title: "Technical Leadership",
     description:
-      "Bridging vision and execution. Leading engineers who ship with quality and velocity — without burning out or cutting corners.",
+      "Bridging product vision and execution — helping teams move fast without losing clarity, quality, or momentum.",
   },
   {
     icon: "Sparkles",
     title: "AI-Assisted Execution",
     description:
-      "Using AI at every stage — ideation, prototyping, writing, QA. Not as a gimmick. As a genuine force multiplier.",
+      "Using AI to accelerate ideation, prototyping, documentation, and execution — as a real workflow advantage, not a gimmick.",
   },
 ];
 
@@ -124,15 +124,15 @@ export const experiments = [
   {
     name: "SolarDesk",
     description:
-      "AI-native SaaS for solar sales teams. Proposals, workflow automation — less manual work, more selling.",
+      "Exploring how AI can reduce proposal friction and operational overhead for solar sales teams.",
     status: "Building",
     statusColor: "#00d4ff",
     tags: ["AI", "SaaS"],
   },
   {
-    name: "Techtification",
+    name: "TeamForge",
     description:
-      "Gamification systems that make technology adoption and learning actually stick.",
+      "Exploring gamification systems designed to improve engagement, team alignment, and technology adoption inside organizations.",
     status: "Exploring",
     statusColor: "#a78bfa",
     tags: ["Gamification", "EdTech"],
@@ -140,15 +140,15 @@ export const experiments = [
   {
     name: "Rana Virtual",
     description:
-      "The next chapter of Virtual Tejo — reimagined with modern social mechanics for a new generation.",
+      "Revisiting culturally rooted multiplayer games with modern social mechanics and mobile-first interaction patterns.",
     status: "Concepting",
     statusColor: "#fb923c",
     tags: ["Mobile", "Social"],
   },
   {
-    name: "AI Product Workflows",
+    name: "AI-Integrated Product Workflows",
     description:
-      "Documenting and systematizing AI-integrated patterns for product teams who want to move faster without losing craft.",
+      "Building repeatable AI-assisted workflows for documentation, planning, prototyping, and product operations.",
     status: "Active",
     statusColor: "#4ade80",
     tags: ["AI", "Workflow"],

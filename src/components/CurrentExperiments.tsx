@@ -60,7 +60,7 @@ export function CurrentExperiments() {
               </p>
             </div>
             <h2 className="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-[#e8f0ff] tracking-tight leading-none mb-4">
-              What I&apos;m Building
+              Current Explorations
             </h2>
             <p className="text-[0.9375rem] max-w-md" style={{ color: "rgba(107,127,163,0.8)", lineHeight: 1.72 }}>
               Active experiments at the intersection of product,
