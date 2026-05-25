@@ -8,7 +8,7 @@ const tags = [
   "Technology Leadership",
   "AI Workflows",
   "Gamification",
-  "Fintech",
+  "Digital Platforms",
   "Interactive Systems",
 ]
 

@@ -75,14 +75,6 @@ export function FeaturedWork() {
               Featured Work
             </h2>
           </div>
-          <p
-            className="mt-5 md:mt-0 md:max-w-xs md:text-right"
-            style={{ fontSize: "0.875rem", color: "rgba(107,127,163,0.58)", lineHeight: 1.75 }}
-          >
-            Products built at scale.<br className="hidden md:block" />
-            Some won awards. Some went viral.<br className="hidden md:block" />
-            All taught something.
-          </p>
         </motion.div>
 
         <motion.div

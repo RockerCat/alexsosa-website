@@ -14,38 +14,37 @@ export const projects = [
   {
     id: "wedraw",
     title: "WeDraw",
-    subtitle: "Samsung SmartTV Challenge — 1st Place",
+    subtitle: "1st Place — Samsung SmartTV Challenge",
     category: "Connected Experience",
     tags: ["SmartTV", "Mobile", "Real-time"],
     description:
-      "Won Samsung's global SmartTV challenge by synchronizing drawing across mobile and living room screens. Built before 'second screen' was a product category anyone cared about.",
+      "Built synchronized mobile + TV experiences years before second-screen products became mainstream.",
     metricValue: "#1",
     metricLabel: "Samsung Challenge",
     year: "2013",
   },
   {
+    id: "animalapp",
+    title: "AnimalApp",
+    subtitle: "National Hackathon Winner — Bogotá",
+    category: "PUBLIC IMPACT",
+    tags: ["Mobile", "Social Impact", "Hackathon"],
+    description:
+      "Designed and built a mobile platform to help mitigate animal abandonment in Bogotá — developed during a national hackathon and selected as the winning solution among teams across Colombia.",
+    metricValue: "#1",
+    metricLabel: "National Hackathon Winner",
+    year: "2018",
+  },
+  {
     id: "lendingpoint",
     title: "LendingPoint",
-    subtitle: "Fintech Product & Delivery Leadership",
     category: "Enterprise Fintech",
     tags: ["Fintech", "Mobile", "Web", "Scale"],
     description:
-      "Five years leading product across mobile and web at one of the US's fastest-growing fintech lenders. Shaped delivery culture, drove growth and navigated the real complexity of financial products at scale.",
-    metricValue: "5 yrs",
+      "Led delivery across mobile and web experiences for one of the fastest-growing fintech lenders in the US.",
+    metricValue: "Product & Technology Delivery Leadership",
     metricLabel: "Product Leadership",
     year: "2018–2023",
-  },
-  {
-    id: "solardesk",
-    title: "SolarDesk",
-    subtitle: "AI-Native SaaS — Active Build",
-    category: "AI Product",
-    tags: ["AI", "SaaS", "Automation"],
-    description:
-      "Eliminating the proposal and workflow friction that keeps solar sales teams from actually selling. AI-native from the ground up — not AI added as an afterthought.",
-    metricValue: "Now",
-    metricLabel: "In Active Development",
-    year: "2024–",
   },
 ];
 
@@ -54,43 +53,43 @@ export const timeline = [
     year: "Early 2000s",
     title: "Learning to Build",
     description:
-      "Started as a developer in the Flash/ActionScript era — learning to make things interactive before the tools made it easy. The constraint was the education.",
+      "Started building interactive experiences in the Flash era — before modern frameworks made creativity accessible.",
   },
   {
     year: "2011",
     title: "Virtual Tejo Breaks Out",
     description:
-      "85K daily active users. Learned that the best products tap into something culturally real — not just technically polished. Virality is a byproduct of resonance.",
+      "Built a culturally rooted social game that reached 85K daily active users organically.",
   },
   {
     year: "2012",
     title: "Social Games in Beijing",
     description:
-      "Led social game development in Beijing, scaling teams across markets with fundamentally different user expectations. First real lesson in building for someone else's context.",
+      "Moved to Beijing to lead social game teams building for international markets — learning fast how products change across cultures.",
   },
   {
     year: "2013",
-    title: "Won the Samsung SmartTV Challenge",
+    title: "Samsung SmartTV Challenge — 1st Place",
     description:
-      "WeDraw took first place in Samsung's global challenge. The first time a product I built ended up in someone's living room at scale.",
+      "Built synchronized TV + mobile experiences years before second-screen products became mainstream.",
   },
   {
     year: "2014–2018",
-    title: "Built a Studio from Scratch",
+    title: "Learned leadership the hard way.",
     description:
-      "Founded AppSolution, grew it to 80+ people, shipped 100+ products. Learned what it actually means to lead — not just build. The hard way.",
+      "Built and scaled a digital product studio to 80+ people — shipping products across mobile, web, SmartTV, and interactive platforms.",
   },
   {
     year: "2018–2023",
     title: "Fintech at Scale — LendingPoint",
     description:
-      "Five years shaping product at a fast-growing fintech lender. Navigating growth, compliance, org complexity and the pressure of building financial products people depend on.",
+      "Helped scale fintech products used by millions — balancing growth, delivery pressure, compliance, and real-world operational complexity.",
   },
   {
     year: "Now",
     title: "AI-Native Mode",
     description:
-      "Integrating AI into every stage of the product development cycle — ideation, prototyping, delivery. Building new tools. Staying genuinely curious.",
+      "Integrating AI into product thinking, prototyping, delivery, and operational workflows — not as hype, but as a genuine force multiplier.",
   },
 ];
 

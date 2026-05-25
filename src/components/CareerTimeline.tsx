@@ -44,8 +44,8 @@ export function CareerTimeline() {
             </p>
           </div>
           <h2 className="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-[#e8f0ff] tracking-tight leading-none">
-            Twenty+ Years<br className="hidden sm:block" />
-            <span style={{ color: "rgba(232,240,255,0.55)", fontWeight: 300 }}> of Building</span>
+          Evolution Through<br className="hidden sm:block" />
+            <span style={{ color: "rgba(232,240,255,0.55)", fontWeight: 300 }}> Products</span>
           </h2>
         </motion.div>
 
