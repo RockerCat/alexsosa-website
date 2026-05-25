@@ -64,7 +64,7 @@ export function HowIBuild() {
           {/* Editorial aside */}
           <p
             className="mt-5 md:mt-0 md:max-w-sm"
-            style={{ fontSize: "0.875rem", color: "rgba(107,127,163,0.6)", lineHeight: 1.75 }}
+            style={{ fontSize: "0.875rem", color: "rgba(202,202,202,0.6)", lineHeight: 1.75 }}
           >
             A consistent set of practices developed over two decades —
             across platforms, team sizes and product types.
@@ -140,7 +140,7 @@ function PillarItem({ pillar, Icon, index }: { pillar: Pillar; Icon: LucideIcon;
       {/* Description — slightly inset */}
       <p
         className="pl-11"
-        style={{ fontSize: "0.875rem", color: "rgba(107,127,163,0.82)", lineHeight: 1.75 }}
+        style={{ fontSize: "0.875rem", color: "rgba(202,202,202,0.82)", lineHeight: 1.75 }}
       >
         {pillar.description}
       </p>

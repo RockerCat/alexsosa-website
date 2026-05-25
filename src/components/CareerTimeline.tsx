@@ -130,7 +130,7 @@ function TimelineItem({ item, index }: { item: TimelineEntry; index: number }) {
           <h3 className="text-[0.9375rem] font-semibold text-[#e8f0ff] mb-2 leading-snug">
             {item.title}
           </h3>
-          <p className="text-[0.8125rem] leading-relaxed" style={{ color: "rgba(107,127,163,0.85)", lineHeight: 1.7 }}>
+          <p className="text-[0.8125rem] leading-relaxed" style={{ color: "rgba(202,202,202,0.85)", lineHeight: 1.7 }}>
             {item.description}
           </p>
         </motion.div>

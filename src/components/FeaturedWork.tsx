@@ -151,7 +151,7 @@ function LargeCard({ project, index, flip }: { project: Project; index: number; 
           <div className="font-black leading-none tracking-tight text-[#00d4ff]" style={{ fontSize: "clamp(2.2rem, 4.5vw, 3.25rem)" }}>
             {project.metricValue}
           </div>
-          <div className="mt-1.5 text-[10px] tracking-[0.2em] uppercase font-medium" style={{ color: "rgba(107,127,163,0.55)" }}>
+          <div className="mt-1.5 text-[10px] tracking-[0.2em] uppercase font-medium" style={{ color: "rgba(150, 170, 205, 0.95)" }}>
             {project.metricLabel}
           </div>
         </div>
@@ -160,7 +160,7 @@ function LargeCard({ project, index, flip }: { project: Project; index: number; 
           <h3 className="font-bold text-[#e8f0ff] leading-tight tracking-tight" style={{ fontSize: "clamp(1.5rem, 2.8vw, 2.1rem)" }}>
             {project.title}
           </h3>
-          <p className="text-[13px] mt-1.5" style={{ color: "rgba(107,127,163,0.65)" }}>
+          <p className="text-[13px] mt-1.5" style={{ color: "rgba(202,202,202,0.65)" }}>
             {project.subtitle}
           </p>
         </div>
@@ -171,7 +171,7 @@ function LargeCard({ project, index, flip }: { project: Project; index: number; 
             : "linear-gradient(to right, rgba(0,212,255,0.22), transparent)",
         }} />
 
-        <p className="flex-1" style={{ fontSize: "0.875rem", color: "rgba(107,127,163,0.88)", lineHeight: 1.76 }}>
+        <p className="flex-1" style={{ fontSize: "0.875rem", color: "rgba(202,202,202,0.88)", lineHeight: 1.76 }}>
           {project.description}
         </p>
 
@@ -188,7 +188,7 @@ function LargeCard({ project, index, flip }: { project: Project; index: number; 
               </span>
             ))}
           </div>
-          <span className="text-[11px] font-mono ml-3 shrink-0" style={{ color: "rgba(107,127,163,0.32)" }}>
+          <span className="text-[11px] font-mono ml-3 shrink-0" style={{ color: "rgba(202,202,202,0.32)" }}>
             {project.year}
           </span>
         </div>
@@ -246,7 +246,7 @@ function CompactCard({ project, index }: { project: Project; index: number }) {
           <h3 className="font-bold text-[#e8f0ff] leading-tight tracking-tight" style={{ fontSize: "clamp(1.25rem, 2.4vw, 1.6rem)" }}>
             {project.title}
           </h3>
-          <p className="text-[12px] mt-1.5" style={{ color: "rgba(107,127,163,0.62)" }}>
+          <p className="text-[12px] mt-1.5" style={{ color: "rgba(202,202,202,0.62)" }}>
             {project.subtitle}
           </p>
         </div>
@@ -258,12 +258,12 @@ function CompactCard({ project, index }: { project: Project; index: number }) {
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
           />
           <span className="text-[0.9rem] font-semibold text-[#00d4ff]">{project.metricValue}</span>
-          <span className="text-[11px]" style={{ color: "rgba(107,127,163,0.52)" }}>{project.metricLabel}</span>
+          <span className="text-[11px]" style={{ color: "rgba(202,202,202,0.52)" }}>{project.metricLabel}</span>
         </div>
 
         <div className="h-px" style={{ background: "linear-gradient(to right, rgba(0,212,255,0.16), transparent)" }} />
 
-        <p className="flex-1" style={{ fontSize: "0.8125rem", color: "rgba(107,127,163,0.84)", lineHeight: 1.74 }}>
+        <p className="flex-1" style={{ fontSize: "0.8125rem", color: "rgba(202,202,202,0.84)", lineHeight: 1.74 }}>
           {project.description}
         </p>
 
@@ -279,7 +279,7 @@ function CompactCard({ project, index }: { project: Project; index: number }) {
               </span>
             ))}
           </div>
-          <span className="text-[10px] font-mono ml-2 shrink-0" style={{ color: "rgba(107,127,163,0.28)" }}>
+          <span className="text-[10px] font-mono ml-2 shrink-0" style={{ color: "rgba(202,202,202,0.28)" }}>
             {project.year}
           </span>
         </div>

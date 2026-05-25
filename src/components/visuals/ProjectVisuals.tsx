@@ -95,8 +95,8 @@ export function VirtualTejoVisual() {
 
         {/* Stats panel — left margin */}
         <rect x={18} y={14} width={72} height={10} rx={2} fill="rgba(0,212,255,0.28)" />
-        <rect x={18} y={28} width={52} height={6} rx={1} fill="rgba(107,127,163,0.24)" />
-        <rect x={18} y={38} width={60} height={4} rx={1} fill="rgba(107,127,163,0.17)" />
+        <rect x={18} y={28} width={52} height={6} rx={1} fill="rgba(202,202,202,0.24)" />
+        <rect x={18} y={38} width={60} height={4} rx={1} fill="rgba(202,202,202,0.17)" />
 
         {/* Live indicator */}
         <motion.circle
@@ -196,15 +196,15 @@ export function WeDrawVisual() {
 
         {/* ── Side labels — left ── */}
         <rect x={14} y={22} width={58} height={8} rx={2} fill="rgba(0,212,255,0.2)" />
-        <rect x={14} y={34} width={44} height={5} rx={1} fill="rgba(107,127,163,0.2)" />
-        <rect x={14} y={43} width={52} height={4} rx={1} fill="rgba(107,127,163,0.15)" />
+        <rect x={14} y={34} width={44} height={5} rx={1} fill="rgba(202,202,202,0.2)" />
+        <rect x={14} y={43} width={52} height={4} rx={1} fill="rgba(202,202,202,0.15)" />
 
         {/* Award badge — right edge */}
         <circle cx={572} cy={32} r={24}
           fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.2)" strokeWidth={0.7} />
         <rect x={557} y={26} width={30} height={5} rx={1} fill="rgba(0,212,255,0.22)" />
-        <rect x={562} y={34} width={20} height={4} rx={1} fill="rgba(107,127,163,0.2)" />
-        <rect x={564} y={41} width={16} height={3} rx={1} fill="rgba(107,127,163,0.15)" />
+        <rect x={562} y={34} width={20} height={4} rx={1} fill="rgba(202,202,202,0.2)" />
+        <rect x={564} y={41} width={16} height={3} rx={1} fill="rgba(202,202,202,0.15)" />
       </svg>
     </div>
   )
@@ -239,8 +239,8 @@ export function LendingPointVisual() {
         <rect x={28} y={12} width={355} height={16} rx={3}
           fill="rgba(0,212,255,0.09)" stroke="rgba(0,212,255,0.14)" strokeWidth={0.5} />
         <rect x={34} y={16} width={82} height={8} rx={1.5} fill="rgba(0,212,255,0.24)" />
-        <rect x={124} y={16} width={55} height={8} rx={1.5} fill="rgba(107,127,163,0.2)" />
-        <rect x={187} y={16} width={40} height={8} rx={1.5} fill="rgba(107,127,163,0.15)" />
+        <rect x={124} y={16} width={55} height={8} rx={1.5} fill="rgba(202,202,202,0.2)" />
+        <rect x={187} y={16} width={40} height={8} rx={1.5} fill="rgba(202,202,202,0.15)" />
 
         {/* Data rows */}
         {lpRows.map((row, i) => (
@@ -249,7 +249,7 @@ export function LendingPointVisual() {
               fill={i === 3 ? "rgba(0,212,255,0.07)" : "rgba(0,212,255,0.025)"}
               stroke="rgba(0,212,255,0.055)" strokeWidth={0.4} />
             {/* Label pill */}
-            <rect x={6} y={4} width={62} height={6} rx={1} fill="rgba(107,127,163,0.22)" />
+            <rect x={6} y={4} width={62} height={6} rx={1} fill="rgba(202,202,202,0.22)" />
             {/* Data bar */}
             <rect x={78} y={4} width={row.bw} height={6} rx={1}
               fill={i === 3 ? "rgba(0,212,255,0.42)" : "rgba(0,212,255,0.18)"} />
@@ -277,7 +277,7 @@ export function LendingPointVisual() {
             transition={{ duration: 2 + i * 0.32, repeat: Infinity, delay: i * 0.42 }}
           />
         ))}
-        <rect x={418} y={155} width={152} height={4} rx={1} fill="rgba(107,127,163,0.18)" />
+        <rect x={418} y={155} width={152} height={4} rx={1} fill="rgba(202,202,202,0.18)" />
 
         {/* KPI panels — top right */}
         {[0, 1].map(i => (
@@ -285,7 +285,7 @@ export function LendingPointVisual() {
             <rect x={0} y={0} width={64} height={32} rx={3}
               fill="rgba(0,212,255,0.07)" stroke="rgba(0,212,255,0.12)" strokeWidth={0.5} />
             <rect x={6} y={7} width={38} height={9} rx={1.5} fill={`rgba(0,212,255,${0.32 - i * 0.08})`} />
-            <rect x={6} y={20} width={26} height={5} rx={1} fill="rgba(107,127,163,0.18)" />
+            <rect x={6} y={20} width={26} height={5} rx={1} fill="rgba(202,202,202,0.18)" />
           </g>
         ))}
       </svg>
@@ -380,7 +380,7 @@ export function SolarDeskVisual() {
         <rect x={497} y={27} width={76} height={9} rx={1.5} fill="rgba(0,212,255,0.26)" />
         {[0,1,2,3,4,5,6,7].map(i => (
           <rect key={i} x={497} y={40 + i * 11} width={60 - (i % 4) * 8} height={6} rx={1}
-            fill="rgba(107,127,163,0.2)" />
+            fill="rgba(202,202,202,0.2)" />
         ))}
         {/* Progress bar */}
         <rect x={497} y={130} width={76} height={6} rx={3}

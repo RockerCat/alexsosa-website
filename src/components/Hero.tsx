@@ -286,7 +286,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.44 }}
             className="leading-relaxed mb-9 max-w-[540px]"
-            style={{ fontSize: "1.0625rem", color: "rgba(107, 127, 163, 0.95)", lineHeight: 1.75 }}
+            style={{ fontSize: "1.0625rem", color: "rgba(202, 202, 202, 0.95)", lineHeight: 1.75 }}
           >
             Games, platforms and emerging technology.
           </motion.p>
@@ -308,7 +308,7 @@ export function Hero() {
                 style={{
                   border: "1px solid rgba(0, 212, 255, 0.16)",
                   background: "rgba(0, 212, 255, 0.045)",
-                  color: "rgba(107, 127, 163, 0.9)",
+                  color: "rgba(202, 202, 202, 0.95)",
                   letterSpacing: "0.04em",
                 }}
               >
@@ -372,7 +372,7 @@ export function Hero() {
           animate={{ y: [0, 5, 0] }}
           transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
         >
-          <ChevronDown size={13} style={{ color: "rgba(107,127,163,0.45)" }} />
+          <ChevronDown size={13} style={{ color: "rgba(202,202,202,0.45)" }} />
         </motion.div>
       </motion.div>
     </section>

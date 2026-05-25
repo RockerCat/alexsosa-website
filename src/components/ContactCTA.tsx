@@ -130,7 +130,7 @@ export function ContactCTA() {
 
           <p
             className="mx-auto mb-16 max-w-lg"
-            style={{ fontSize: "1.0625rem", color: "rgba(107,127,163,0.85)", lineHeight: 1.75 }}
+            style={{ fontSize: "1.0625rem", color: "rgba(202,202,202,0.85)", lineHeight: 1.75 }}
           >
             Always interested in meaningful product conversations, ambitious ideas, and teams building things that actually matter.
           </p>
@@ -181,14 +181,14 @@ export function ContactCTA() {
                   </span>
                   <div className="relative z-10 text-left flex-1">
                     <div className="text-[13px] font-semibold text-[#e8f0ff]">{link.label}</div>
-                    <div className="text-[11px] mt-0.5" style={{ color: "rgba(107,127,163,0.7)" }}>
+                    <div className="text-[11px] mt-0.5" style={{ color: "rgba(202,202,202,0.7)" }}>
                       {link.description}
                     </div>
                   </div>
                   <ArrowUpRight
                     size={13}
                     className="relative z-10 ml-auto transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                    style={{ color: "rgba(107,127,163,0.4)" }}
+                    style={{ color: "rgba(202,202,202,0.4)" }}
                   />
                 </motion.a>
               )
@@ -205,13 +205,13 @@ export function ContactCTA() {
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <span
             className="text-[11px]"
-            style={{ color: "rgba(107,127,163,0.4)", letterSpacing: "0.04em" }}
+            style={{ color: "rgba(202,202,202,0.4)", letterSpacing: "0.04em" }}
           >
             © 2025 Alex Sosa. All rights reserved.
           </span>
           <span
             className="text-[10px] font-mono tracking-[0.2em] uppercase"
-            style={{ color: "rgba(107,127,163,0.25)" }}
+            style={{ color: "rgba(202,202,202,0.25)" }}
           >
             Building Digital Products. Driving Innovation.
           </span>

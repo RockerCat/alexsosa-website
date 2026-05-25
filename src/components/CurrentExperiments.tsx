@@ -62,7 +62,7 @@ export function CurrentExperiments() {
             <h2 className="text-[clamp(2.2rem,5vw,3.5rem)] font-bold text-[#e8f0ff] tracking-tight leading-none mb-4">
               Current Explorations
             </h2>
-            <p className="text-[0.9375rem] max-w-md" style={{ color: "rgba(107,127,163,0.8)", lineHeight: 1.72 }}>
+            <p className="text-[0.9375rem] max-w-md" style={{ color: "rgba(202,202,202,0.8)", lineHeight: 1.72 }}>
               Active experiments at the intersection of product,
               technology and emerging platforms.
             </p>
@@ -142,7 +142,7 @@ function ExperimentCard({ experiment, index }: { experiment: Experiment; index: 
           </div>
           <span
             className="text-[10px] font-mono"
-            style={{ color: "rgba(107,127,163,0.35)" }}
+            style={{ color: "rgba(202,202,202,0.35)" }}
           >
             0{index + 1}
           </span>
@@ -156,7 +156,7 @@ function ExperimentCard({ experiment, index }: { experiment: Experiment; index: 
         {/* Description */}
         <p
           className="text-[0.8125rem] flex-1"
-          style={{ color: "rgba(107,127,163,0.85)", lineHeight: 1.7 }}
+          style={{ color: "rgba(202,202,202,0.85)", lineHeight: 1.7 }}
         >
           {experiment.description}
         </p>
