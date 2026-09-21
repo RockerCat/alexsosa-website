@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Alex Sosa — Product & Technology Leader",
+  title: "Alex Sosa — Product & Technology | AI-Native Builder",
   description:
-    "Product & Technology Leader with 20+ years building interactive digital products across gaming, fintech, SmartTV, mobile, UX, gamification, and AI-assisted workflows.",
+    "I turn ideas and business problems into working digital products and AI-enabled workflows.",
   openGraph: {
-    title: "Alex Sosa — Product & Technology Leader",
+    title: "Alex Sosa — Product & Technology | AI-Native Builder",
     description:
-      "Building digital products through technology, UX, AI and interactive experiences.",
+      "I turn ideas and business problems into working digital products and AI-enabled workflows.",
     type: "website",
   },
 }
