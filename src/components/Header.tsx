@@ -1,12 +1,12 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import type { Dictionary } from "@/content"
 import { localePath, locales, switchLocalePath, type Locale } from "@/lib/i18n"
 import { ArrowRight, Close, Menu } from "./Icons"
-import { Logo } from "./Logo"
 
 type Props = { locale: Locale; nav: Dictionary["nav"] }
 
@@ -92,7 +92,7 @@ export function Header({ locale, nav }: Props) {
       </a>
       <div className="container-site flex h-[72px] items-center justify-between gap-6">
         <Link href={localePath(locale)} className="flex items-center gap-3" aria-label={nav.homeLabel}>
-          <Logo size={38} priority />
+          <Image src="/brand/alex-sosa-header-logo-transparent.png" width={38} height={38} alt="" priority className="shrink-0" />
           <span className="text-[1.0625rem] font-semibold tracking-tight">Alex Sosa</span>
         </Link>
 
