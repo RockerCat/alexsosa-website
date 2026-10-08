@@ -311,6 +311,8 @@ const es: Dictionary = {
       },
       {
         id: "teamforge",
+        // Hidden from the public site for now; set to false (or remove) to show it again.
+        hidden: true,
         kind: "platform",
         name: "TeamForge",
         sector: "Gestión de proyectos · Registro de tiempo",

@@ -310,6 +310,8 @@ const en = {
       },
       {
         id: "teamforge",
+        // Hidden from the public site for now; set to false (or remove) to show it again.
+        hidden: true,
         kind: "platform",
         name: "TeamForge",
         sector: "Project management · Time tracking",

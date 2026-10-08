@@ -155,7 +155,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
           />
           <ul className="mt-14 border-b border-line">
             {featuredWork
-              .map((id) => dict.work.items.find((item) => item.id === id))
+              .map((id) => dict.work.items.find((item) => item.id === id && !item.hidden))
               .filter((item) => item !== undefined)
               .map((item, i) => (
                 <WorkRow key={item.id} item={item} dict={dict} index={i} />

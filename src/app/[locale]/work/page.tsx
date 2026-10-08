@@ -17,9 +17,10 @@ export default async function WorkPage({ params }: PageProps<"/[locale]/work">) 
   if (!isLocale(locale)) notFound()
   const dict = getDictionary(locale)
   const t = dict.work
-  const products = t.items.filter((item) => item.kind === "product" || item.kind === "game")
-  const platforms = t.items.filter((item) => item.kind === "platform")
-  const experience = t.items.filter((item) => item.kind === "employment" || item.kind === "company")
+  const items = t.items.filter((item) => !item.hidden)
+  const products = items.filter((item) => item.kind === "product" || item.kind === "game")
+  const platforms = items.filter((item) => item.kind === "platform")
+  const experience = items.filter((item) => item.kind === "employment" || item.kind === "company")
 
   return (
     <>
